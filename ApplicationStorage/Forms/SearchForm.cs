@@ -204,7 +204,15 @@ namespace ApplicationStorage
                         }
                         else if (!IsNumeric(toolStripTextBox1.Text) && toolStripComboBox2.SelectedIndex == 3)
                         {
-                            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"header LIKE '%{toolStripTextBox1.Text}%'";
+                            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"name LIKE '%{toolStripTextBox1.Text}%'";
+                        }
+                        else if (!IsNumeric(toolStripTextBox1.Text) && toolStripComboBox2.SelectedIndex == 4)
+                        {
+                            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"surname LIKE '%{toolStripTextBox1.Text}%'";
+                        }
+                        else if (!IsNumeric(toolStripTextBox1.Text) && toolStripComboBox2.SelectedIndex == 5)
+                        {
+                            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"middlename LIKE '%{toolStripTextBox1.Text}%'";
                         }
                         break;
                     }

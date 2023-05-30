@@ -44,3 +44,6 @@ C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\bin\Debu
 C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\obj\Debug\ApplicationStorage.csproj.Fody.CopyLocal.cache
 C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\obj\Debug\ApplicationStorage.csproj.CopyComplete
+C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\obj\Debug\ApplicationStorage.Forms.AdminForm.resources
+C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\obj\Debug\ApplicationStorage.Forms.InsertMore.resources
+C:\Users\THUNDEROBOT\source\repos\ApplicationStorage\ApplicationStorage\obj\Debug\ApplicationStorage.Forms.RegForm.resources

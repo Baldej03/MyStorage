@@ -18,17 +18,31 @@ namespace ApplicationStorage.InsertLogic
     {
         public InsertProduct(ProductEntity productEntity, SqlConnection sqlConnection)
         {
-            SqlCommand commandProduct = new SqlCommand("INSERT INTO [Product] (article, name, id_provider) VALUES (@article, @name, @id_provider)", sqlConnection);
-            commandProduct.Parameters.AddWithValue("@article", productEntity.article);
-            commandProduct.Parameters.AddWithValue("@name", productEntity.name);
-            commandProduct.Parameters.AddWithValue("@id_provider", productEntity.id_provider);
-            commandProduct.ExecuteNonQuery().ToString();
+            try
+            {
+                SqlCommand commandProduct = new SqlCommand("INSERT INTO [Product] (article, name, id_provider) VALUES (@article, @name, @id_provider)", sqlConnection);
+                commandProduct.Parameters.AddWithValue("@article", productEntity.article);
+                commandProduct.Parameters.AddWithValue("@name", productEntity.name);
+                commandProduct.Parameters.AddWithValue("@id_provider", productEntity.id_provider);
+                commandProduct.ExecuteNonQuery().ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void UpdateIdSupply(int id_supply, int id_product, SqlConnection sqlConnection)
         {
-            SqlCommand commandProduct1 = new SqlCommand($"UPDATE Product SET id_supply={id_supply} WHERE IdProduct={id_product}", sqlConnection);
-            commandProduct1.ExecuteNonQuery().ToString();
+            try
+            {
+                SqlCommand commandProduct1 = new SqlCommand($"UPDATE Product SET id_supply={id_supply} WHERE IdProduct={id_product}", sqlConnection);
+                commandProduct1.ExecuteNonQuery().ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

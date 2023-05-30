@@ -18,15 +18,22 @@ namespace ApplicationStorage.InsertLogic
     {
         public InsertSupply(SupplyEntity supplyEntity, SqlConnection sqlConnection)
         {
-            SqlCommand commandSupply = new SqlCommand("INSERT INTO [Supply] (id_product, id_storage, date, count, price, sumPrice)" +
-                " VALUES (@id_product, @id_storage, @date, @count, @price, @sumPrice)", sqlConnection);
-            commandSupply.Parameters.AddWithValue("@id_product", supplyEntity.id_product);
-            commandSupply.Parameters.AddWithValue("@id_storage", supplyEntity.id_storage);
-            commandSupply.Parameters.AddWithValue("@date", supplyEntity.date);
-            commandSupply.Parameters.AddWithValue("@count", supplyEntity.count);
-            commandSupply.Parameters.AddWithValue("@price", supplyEntity.price);
-            commandSupply.Parameters.AddWithValue("@sumPrice", supplyEntity.sumPrice);
-            commandSupply.ExecuteNonQuery().ToString();
+            try
+            {
+                SqlCommand commandSupply = new SqlCommand("INSERT INTO [Supply] (id_product, id_storage, date, count, price, sumPrice)" +
+                    " VALUES (@id_product, @id_storage, @date, @count, @price, @sumPrice)", sqlConnection);
+                commandSupply.Parameters.AddWithValue("@id_product", supplyEntity.id_product);
+                commandSupply.Parameters.AddWithValue("@id_storage", supplyEntity.id_storage);
+                commandSupply.Parameters.AddWithValue("@date", supplyEntity.date);
+                commandSupply.Parameters.AddWithValue("@count", supplyEntity.count);
+                commandSupply.Parameters.AddWithValue("@price", supplyEntity.price);
+                commandSupply.Parameters.AddWithValue("@sumPrice", supplyEntity.sumPrice);
+                commandSupply.ExecuteNonQuery().ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

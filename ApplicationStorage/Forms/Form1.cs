@@ -12,6 +12,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using ApplicationStorage.Entityes;
+using ApplicationStorage.Forms;
 
 namespace ApplicationStorage
 {
@@ -176,7 +177,7 @@ namespace ApplicationStorage
         {
             if (toolStripComboBox1.SelectedItem != null)
             {
-                (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = null;
+                //(dataGridView1.DataSource as DataTable).DefaultView.RowFilter = null;
                 LoadData();
             }
             else
@@ -193,8 +194,8 @@ namespace ApplicationStorage
 
         protected void toolStripButton1_Click(object sender, EventArgs e)
         {
-            ProviderEntity providerEntity = new ProviderEntity(bdEntity.getSqlConnect());
-            StorageEntity storageEntity = new StorageEntity(bdEntity.getSqlConnect());
+            ProviderField providerEntity = new ProviderField(bdEntity.getSqlConnect());
+            StorageField storageEntity = new StorageField(bdEntity.getSqlConnect());
             var form = new InsertForm(bdEntity, providerEntity, storageEntity);
             form.Show();
         }
@@ -207,6 +208,11 @@ namespace ApplicationStorage
         protected void toolStripButton4_Click(object sender, EventArgs e)
         {
             var form = new RequestForm(bdEntity);
+            form.Show();
+        }
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            var form = new AdminForm(bdEntity);
             form.Show();
         }
         private void dataGridView1_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
@@ -231,6 +237,12 @@ namespace ApplicationStorage
             {
                 e.Handled = true;
             }
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            var form = new RegForm(bdEntity);
+            form.Show();
         }
     }
 }

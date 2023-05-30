@@ -232,6 +232,14 @@
     <Compile Include="BdConnecting.cs" />
     <Compile Include="Entityes\ProviderEntity.cs" />
     <Compile Include="Entityes\StorageEntity.cs" />
+    <Compile Include="FindFields\ProviderField.cs" />
+    <Compile Include="FindFields\StorageField.cs" />
+    <Compile Include="Forms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,7 +253,21 @@
       <DependentUpon>InsertForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entityes\ProductEntity.cs" />
+    <Compile Include="Forms\InsertMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertMore.Designer.cs">
+      <DependentUpon>InsertMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertLogic\InsertProduct.cs" />
+    <Compile Include="InsertLogic\InsertProvider.cs" />
+    <Compile Include="InsertLogic\InsertStorage.cs" />
     <Compile Include="InsertLogic\InsertSupply.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -262,6 +284,7 @@
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entityes\SupplyEntity.cs" />
+    <Compile Include="Security.cs" />
     <Compile Include="WarehouseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -272,11 +295,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WarehouseDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InsertForm.resx">
       <DependentUpon>InsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertMore.resx">
+      <DependentUpon>InsertMore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

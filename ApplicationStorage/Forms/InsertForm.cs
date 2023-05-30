@@ -19,9 +19,9 @@ namespace ApplicationStorage
     public partial class InsertForm : Form
     {
         private BdConnecting bd = null;
-        private ProviderEntity providerEntity;
-        private StorageEntity storageEntity;
-        public InsertForm(BdConnecting bd, ProviderEntity providerEntity, StorageEntity storageEntity)
+        private ProviderField providerEntity;
+        private StorageField storageEntity;
+        public InsertForm(BdConnecting bd, ProviderField providerEntity, StorageField storageEntity)
         {
             InitializeComponent();
             this.bd = bd;
@@ -31,6 +31,7 @@ namespace ApplicationStorage
 
         private void InsertForm_Load(object sender, EventArgs e)
         {
+            textBox2.MaxLength = 6;
             comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
@@ -48,6 +49,7 @@ namespace ApplicationStorage
         {
             try
             {
+          
                 if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && comboBox1.SelectedItem != "" && comboBox2.SelectedItem != "")
                 {
                     ProductEntity productEntity = new ProductEntity(

@@ -137,7 +137,7 @@ namespace ApplicationStorage
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.textBox1.Location = new System.Drawing.Point(0, 20);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 22);
+            this.textBox1.Size = new System.Drawing.Size(350, 22);
             this.textBox1.TabIndex = 12;
             // 
             // textBox2
@@ -146,7 +146,7 @@ namespace ApplicationStorage
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.textBox2.Location = new System.Drawing.Point(0, 70);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(373, 22);
+            this.textBox2.Size = new System.Drawing.Size(350, 22);
             this.textBox2.TabIndex = 13;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
@@ -157,7 +157,7 @@ namespace ApplicationStorage
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(0, 120);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(373, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(350, 22);
             this.dateTimePicker1.TabIndex = 14;
             this.dateTimePicker1.Value = new System.DateTime(2023, 5, 12, 0, 0, 0, 0);
             // 
@@ -167,7 +167,7 @@ namespace ApplicationStorage
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.textBox3.Location = new System.Drawing.Point(0, 169);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(373, 22);
+            this.textBox3.Size = new System.Drawing.Size(350, 22);
             this.textBox3.TabIndex = 15;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
@@ -177,7 +177,7 @@ namespace ApplicationStorage
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.textBox4.Location = new System.Drawing.Point(0, 218);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(373, 22);
+            this.textBox4.Size = new System.Drawing.Size(350, 22);
             this.textBox4.TabIndex = 16;
             this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
@@ -188,7 +188,7 @@ namespace ApplicationStorage
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(0, 267);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(373, 24);
+            this.comboBox1.Size = new System.Drawing.Size(350, 24);
             this.comboBox1.TabIndex = 17;
             // 
             // comboBox2
@@ -198,7 +198,7 @@ namespace ApplicationStorage
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(0, 318);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(373, 24);
+            this.comboBox2.Size = new System.Drawing.Size(350, 24);
             this.comboBox2.TabIndex = 18;
             // 
             // button1
@@ -207,7 +207,7 @@ namespace ApplicationStorage
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.button1.Location = new System.Drawing.Point(0, 342);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(373, 61);
+            this.button1.Size = new System.Drawing.Size(350, 73);
             this.button1.TabIndex = 19;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@ namespace ApplicationStorage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 403);
+            this.ClientSize = new System.Drawing.Size(350, 415);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label8);

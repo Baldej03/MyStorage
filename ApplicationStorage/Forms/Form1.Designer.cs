@@ -43,10 +43,12 @@ namespace ApplicationStorage
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.warehouseDataSet = new ApplicationStorage.WarehouseDataSet();
             this.warehouseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.warehouseDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouseDataSet)).BeginInit();
@@ -67,7 +69,9 @@ namespace ApplicationStorage
             this.toolStripButton4,
             this.toolStripSeparator4,
             this.toolStripButton3,
-            this.toolStripSeparator5});
+            this.toolStripSeparator5,
+            this.toolStripButton5,
+            this.toolStripSeparator6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(994, 26);
@@ -174,6 +178,18 @@ namespace ApplicationStorage
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 26);
             // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Margin = new System.Windows.Forms.Padding(10, 1, 10, 2);
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(54, 23);
+            this.toolStripButton5.Text = "Админ";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -201,6 +217,11 @@ namespace ApplicationStorage
             // 
             this.warehouseDataSetBindingSource1.DataSource = this.warehouseDataSet;
             this.warehouseDataSetBindingSource1.Position = 0;
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 26);
             // 
             // Form1
             // 
@@ -243,6 +264,8 @@ namespace ApplicationStorage
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.BindingSource warehouseDataSetBindingSource1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }
 

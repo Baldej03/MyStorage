@@ -1,34 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using System.Globalization;
 
 namespace ApplicationStorage.Entityes
 {
-    public class StorageEntity
+    class StorageEntity
     {
-        public List<string> adress = new List<string>();
+        public string adress { get; private set; }
+        public string telephone { get; private set; }
+        public string name { get; private set; }
+        public string surname { get; private set; }
+        public string middlename { get; private set; }
 
-        public StorageEntity(SqlConnection sqlConnection)
+        public StorageEntity(string adress, string telephone, string name, string surname, string middlename)
         {
-            string query = "SELECT adress FROM Storage";
-            SqlCommand command = new SqlCommand(query, sqlConnection);
-            SqlDataReader reader = command.ExecuteReader();
-            List<string> data = new List<string>();
-            while (reader.Read())
-            {
-                adress.Add(reader[0].ToString());
-            }
-            reader.Close();
+            this.adress = adress;
+            this.telephone = telephone;
+            this.name = name;
+            this.surname = surname;
+            this.middlename = middlename;
         }
     }
 }
